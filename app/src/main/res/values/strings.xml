@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bale Gariw</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="map">Map</string>
+    <string name="messages">Messages</string>
+    <string name="routes">Routes</string>
+    <string name="blue_loop">Blue Loop</string>
+    <string name="green_loop">Green Loop</string>
+</resources>
