@@ -33,10 +33,10 @@ int x = 1;
             @Override
             public void onClick(View v) {
                 if(x == 1){
-                    NavDrawer.openDrawer((int) Gravity.LEFT);
+                    NavDrawer.openDrawer((int) Gravity.START);
                     x  = 2;
                 }else{
-                    NavDrawer.closeDrawer((int) Gravity.LEFT);
+                    NavDrawer.closeDrawer((int) Gravity.START);
                     x  = 1;
                 }
             }
@@ -62,16 +62,20 @@ int x = 1;
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
         Fragment fragment = null;
+
         switch (Item.getItemId()){
-            case R.id.navigation_home:
+
+                case R.id.navigation_home:
                 fragment = new RoutesFragment();
                 break;
-            case R.id.navigation_dashboard:
+                case R.id.navigation_dashboard:
                 fragment = new MapFragment();
                 break;
-            case R.id.navigation_notifications:
+                case R.id.navigation_notifications:
                 fragment = new MessagesFragment();
                 break;
+
+
         }
         return loadFragment(fragment);
     }

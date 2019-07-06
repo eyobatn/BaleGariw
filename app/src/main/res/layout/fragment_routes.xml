@@ -5,40 +5,42 @@
 
 
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/switch2"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:checked="false"
+        android:text="@string/green_loop"
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:checked="true" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="548dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="Blue Loop"
-        android:textColorLink="@color/colorPrimary"
-        android:textSize="24sp" />
-
-    <Switch
-        android:id="@+id/switch5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/switch4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
-        android:checked="false"
-        android:text="Green Loop"
+        android:layout_marginBottom="697dp"
+        android:text="@string/blue_loop"
         android:textSize="24sp"
-        tools:checked="true" />
+        android:visibility="visible" />
 
 </RelativeLayout>

@@ -11,8 +11,8 @@
         layout="@layout/activity_nav_drawer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="visible"
         android:alpha="255"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -24,7 +24,7 @@
         android:id="@+id/fragment_container"
 
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="831dp"
         android:layout_marginBottom="56dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,35 +34,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="48dp">
 
             <ImageButton
                 android:id="@id/menu_button"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
+                android:layout_height="21dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="336dp"
-                android:layout_marginRight="336dp"
-                android:layout_marginBottom="13dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/ic_menu"
                 android:contentDescription="@string/todo"
                 android:onClick="onClick"
                 android:paddingLeft="16dp"
                 android:paddingTop="32dp"
                 tools:ignore="OnClick" />
-        </RelativeLayout>
-    </FrameLayout>
+        </LinearLayout>
 
+    </FrameLayout>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
@@ -71,7 +66,7 @@
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation">

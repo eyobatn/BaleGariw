@@ -20,6 +20,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/bale_g"
 
-        />
+        android:contentDescription="@string/todo" />
 
 </LinearLayout>
