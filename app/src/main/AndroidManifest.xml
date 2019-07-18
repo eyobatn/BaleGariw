@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.amanu.balegariw">
-
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    package="com.azrar.balegariw">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-feature
-        android:glEsVersion="0x0020000"
-        android:required="true" />
-
-    <meta-data
-        android:name="com.google.geo.API_KEY"
-        android:value="AIzaSyCzAhvG-6PV2TUkzikMiOOMvk1jmZyki18" />
 
     <application
         android:allowBackup="true"
@@ -21,22 +15,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         >
+        <activity android:name="com.azrar.balegariw.MessagesActivity"></activity>
+        <activity android:name="com.azrar.balegariw.AboutActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.azrar.balegariw.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.azrar.balegariw.MainActivity"
             android:label="@string/app_name">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".NavDrawer"
-            android:label="@string/title_activity_nav_drawer"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

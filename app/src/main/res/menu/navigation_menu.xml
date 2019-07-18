@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_maps"
+        android:title="@string/map"
+        android:icon="@drawable/map_icon"/>
+    <item
+        android:id="@+id/nav_routes"
+        android:title="@string/route"
+        android:icon="@drawable/routes_icon"/>
+    <item
+        android:id="@+id/nav_messages"
+        android:title="@string/messages"
+        android:icon="@drawable/message_icon"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+
+    <item
+        android:id="@+id/nav_about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_help_outline_black_24dp"/>
+
+
+</menu>
